@@ -4,7 +4,7 @@ using System.Collections;
 public class turnManager : MonoBehaviour {
 
 	void Start() {
-		// This routine will generate the initial cubes in the scene
+		// Generate the initial cubes in the scene
 		int count = 1;
 		float gap = 3f;
 
@@ -16,6 +16,9 @@ public class turnManager : MonoBehaviour {
 				count++;
 			}
 		}
+
+		// test: loading a xml level
+		this.gameObject.GetComponent<levelHandler>().loadLevel(1);
 	}
 		
 	void Update() {
