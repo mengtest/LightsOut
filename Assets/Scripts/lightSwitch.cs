@@ -5,14 +5,6 @@ public class lightSwitch : MonoBehaviour {
 
 	public bool isOn = false;
 
-	void Start () {
-	
-	}
-
-	void Update () {
-	
-	}
-
 	public void change() {
 		if(isOn){
 			isOn = false;
